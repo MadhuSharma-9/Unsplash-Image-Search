@@ -1,0 +1,153 @@
+/* 🔹 Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* 🔹 Reset default margins & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🔹 Center entire page */
+body {
+    background: #f4f4f9;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full height */
+    margin: 0;
+    padding: 20px;
+}
+
+/* 🔹 Parent container */
+.inp-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px; /* Made wider */
+}
+
+/* 🔹 Input and button container */
+.inp-child {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ddd;
+    width: 100%;
+    max-width: 500px; /* Increased width */
+}
+
+/* 🔹 Input field */
+.inp {
+    padding: 12px;
+    flex-grow: 1;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🔹 Input placeholder */
+.inp::placeholder {
+    color: #888;
+}
+
+/* 🔹 Input focus effect */
+.inp:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+/* 🔹 Search button */
+.btn {
+    padding: 12px 18px;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* 🔹 Button hover effect */
+.btn:hover {
+    background: #003f7f;
+    transform: scale(1.05);
+}
+
+/* 🔹 Main content area (BIGGER NOW) */
+.main-div {
+    width: 100%;
+    max-width: 900px; /* Made wider */
+    min-height: 600px; /* Increased height */
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    overflow-y: auto;
+    border: 2px solid #ddd;
+}
+
+/* 🔹 Image divs inside .main-div */
+.img-div {
+    width: 200px; /* Slightly bigger */
+    height: 260px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* 🔹 Image styling */
+.img-div img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* 🔹 Title text styling */
+.img-div span {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    width: 100%;
+    padding: 5px 8px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0.5px;
+    font-style: italic;
+}
+
+/* 🔹 Hover effect */
+.img-div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
