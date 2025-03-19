@@ -5,6 +5,8 @@ let page = 1;
 let input = document.querySelector('.inp')
 const search = document.querySelector('.btn')
 
+// Function to fetch API data
+
 
 async function gettingApi() {
     
